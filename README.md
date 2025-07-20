@@ -69,15 +69,12 @@ drivers/: It's a common practice to create a directory at the project root to ho
 
 #Installation#
 1. Clone the repository:
-Bash: 
 git clone https://github.com/your-username/your-repository-name.git
 
 2. Navigate to the project directory:
-Bash
 cd your-repository-name
 
 3. Add Dependencies: If you are using a Maven project, add the following dependency to your pom.xml file:
-XML
 <dependencies>
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -87,22 +84,26 @@ XML
 Then, update your project to download the dependencies.
 
 #Usage#
-Set up ChromeDriver:
-Download the appropriate ChromeDriver from the official site.
-Place the chromedriver.exe (or chromedriver for Linux/Mac) in a known directory.
-Make sure this directory is included in your system's PATH environment variable. Alternatively, you can specify the path directly in the code using System.setProperty("webdriver.chrome.driver", "path/to/your/chromedriver");.
-Run the script:
-Open the project in your IDE (e.g., Eclipse, IntelliJ).
-Navigate to the RedBusAutomation.java file.
-Run the main() method. The script will open a Chrome browser window and execute the automation steps.
+1. Set up ChromeDriver:
+    1. Download the appropriate ChromeDriver from the official site.
+    2. Place the chromedriver.exe (or chromedriver for Linux/Mac) in a known directory.
+    3. Make sure this directory is included in your system's PATH environment variable. Alternatively, you can specify the path directly in the code using :
+       System.setProperty("webdriver.chrome.driver", "path/to/your/chromedriver");.
+2. Run the project
+    1. Open the project in your IDE (e.g., Eclipse, IntelliJ).
+    2. Navigate to the RedBusAutomation.java file.
+    3. Run the main() method. The script will open a Chrome browser window and execute the automation steps.
 
 #Expected Outcome#
+
 The console will display the total number of buses found after applying the 'Primo' and 'Evening' filters. Note: The code in the prompt currently prints this count, but the final extraction and printing of each operator's name is not yet implemented.
+
 
 A sample output showing the bus count would look like this:
 24 buses found
 
 To complete the assignment, the logic to iterate through the final list of web elements and print the travelsName for each bus would be added after the lazy-loading while loop.
+
 
 
 
