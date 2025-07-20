@@ -24,33 +24,36 @@ The primary goal is to demonstrate proficiency in web automation, particularly i
 
 #Project Structure#
 This project follows the standard Maven directory layout, which helps keep source code, test code, and resources organized.
-
+getting error while copying project structure:
 RedBusAutomation/
 │
-├── pom.xml                  # Maven Project Object Model file for dependencies
+
+├── pom.xml
+
+├── .gitignore
+
+├── src/
+
+│   ├── main/
+
+│   │   ├── java/
+
+│   │   │   └── com/
+
+│   │   │       └── redBus/
+
+│   │   │           └── RedBusAutomation.java
+
+│   │   └── resources/
+
+│   └── test/
+
+│       └── java/
 
 │
-├── .gitignore               # To exclude files like /target from Git
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── redBus/
-│   │   │           └── RedBusAutomation.java   # Your main automation script
-│   │   │
-│   │   └── resources/
-│   │       # (Optional: For non-code files like property configurations)
-│   │
-│   └── test/
-│       ├── java/
-│       │   # (Optional: For test scripts using JUnit or TestNG)
-│       │
-│       └── resources/
-│           # (Optional: For resources needed by tests)
-│
 └── drivers/
-    └── chromedriver.exe     # (Recommended: Store browser drivers here)
+    └── chromedriver.exe
+
 Explanation
 pom.xml: The core of a Maven project. It defines the project's dependencies (like Selenium), plugins, and build settings.
 src/main/java: This is where your main application source code resides. Your RedBusAutomation.java file is located here within its package structure (com/redBus).
