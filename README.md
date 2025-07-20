@@ -28,6 +28,7 @@ This project follows the standard Maven directory layout, which helps keep sourc
 RedBusAutomation/
 │
 ├── pom.xml                  # Maven Project Object Model file for dependencies
+
 │
 ├── .gitignore               # To exclude files like /target from Git
 │
